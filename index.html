@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
     <meta charset="UTF-8">
+    <meta name="description" content="Acesse minhas principais redes sociais">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0F060F">
+    <meta name="theme-color" content="var(--background)">
     <title>wosteimer</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
@@ -17,6 +18,15 @@
 </head>
 
 <body>
+    <div class="switch-container">
+        <i class="fa-solid fa-sun"></i>
+        <label class="switch">
+            trocar tema
+            <input type="checkbox" onchange="toggle_color_theme()">
+            <div class="slider"></div>
+        </label>
+        <i class="fa-solid fa-moon"></i>
+    </div>
     <div class="container">
         <header>
             <img src="https://github.com/wosteimer.png" alt="Imagem de perfil" />
@@ -31,7 +41,6 @@
                     </a>
                 </li>
                 <li>
-
                     <a href="https://github.com/wosteimer" target="_blank">
                         <i class="fa-brands fa-github"></i>GitHub
                     </a>
@@ -49,9 +58,10 @@
             </ul>
         </main>
         <footer>
-            <p>feito com <i class="fa-solid fa-heart heart"></i> por @wosteimer</p>
+            <p>feito com<i class="fa-solid fa-heart heart"></i>por @wosteimer</p>
         </footer>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
